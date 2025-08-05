@@ -19,7 +19,7 @@ def main():
     X_input = input("Enter X values (independent variable): ")
     Y_input = input("Enter Y values (dependent variable): ")
 
-    # Convert input strings to numeric NumPy arrays
+  
     X = np.array([float(x.strip()) for x in X_input.split(',')])
     Y = np.array([float(y.strip()) for y in Y_input.split(',')])
 
@@ -27,10 +27,10 @@ def main():
     alpha_hat, beta_hat = calculate_ols(X, Y)
     print(f"\nOLS Estimates:\nIntercept (alpha) = {alpha_hat:.4f}\nSlope (beta) = {beta_hat:.4f}")
 
-    # Predictions
+
     Y_pred = predict(X, alpha_hat, beta_hat)
 
-    # Plot Actual Data and Fitted Regression Line
+    
     plt.scatter(X, Y, color='red', label="Actual Data")
     plt.plot(X, Y_pred, color='blue', label="Fitted Line")
     plt.xlabel("X Variable")
@@ -40,7 +40,6 @@ def main():
     plt.grid(True)
     plt.show()
 
-    # Calculate and print Residuals
     residuals = Y - Y_pred
     print("\nResiduals:")
     for i, res in enumerate(residuals):
@@ -48,3 +47,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
