@@ -67,7 +67,24 @@ def main():
 if __name__ == "__main__":
     main()
 *****************************************************************************************************************************************************
+**Data Used** 
+X values (independent variable): 23,25,26,28,40,50
+Y values (dependent variable): 20,24,28,29,35,49
+*****************************************************************************************************************************************************
 **Output**
+
+OLS Estimates:
+Intercept (alpha) = 1.0789
+Slope (beta) = 0.9298
+
+Residuals:
+Data Point 1: Residual = -2.4649
+Data Point 2: Residual = -0.3246
+Data Point 3: Residual = 2.7456
+Data Point 4: Residual = 1.8860
+Data Point 5: Residual = -3.2719
+Data Point 6: Residual = 1.4298
+
 
 <img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/44b60469-5258-4683-af5c-bcf511ab27bc" />
 
